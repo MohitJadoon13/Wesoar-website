@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeSoar - The Future of HR</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/embed/v2.js"></script>
+    <!-- <script>
+      hbspt.forms.create({
+        portalId: "8090367",
+        formId: "134b06cb-6685-48d9-8bbf-3e3d72abdc26",
+        region: "na1"
+      });
+    </script> -->
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                 <!-- Light (colored) logo -->
+                <img src="./images/wesoar_logo.svg" alt="WeSoar Logo"  class="logo logo--light"/>
+                <!-- Dark (white) logo -->
+                <img src="./images/wesoar_logo_white.svg" alt="WeSoar Logo (White)" class="logo logo--dark"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger_iconbox">
+                    <svg class="hamburger_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                        <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M1 7h28" />
+                        <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M1 15h28" />
+                        <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M1 23h28" />
+                    </svg>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="solutions.html" data-i18n="solutions">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" data-i18n="aboutUs">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html" data-i18n="resources">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" data-i18n="contact">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDisplay" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-globe"></i> EN
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDisplay">
+                            <li><a class="dropdown-item language-item" href="#" data-lang="en">English</a></li>
+                            <li><a class="dropdown-item language-item" href="#" data-lang="ar">العربية</a></li>
+                            <li><a class="dropdown-item language-item" href="#" data-lang="es">Español</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link theme-toggle" href="#"><i class="bi bi-moon"></i></a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary" href="#demo" data-i18n="scheduleDemo">Schedule Demo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section-home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h1 class="title_primary" data-i18n="heroTitle">WeSoar. <span class="text-primary">The Future of HR.</span></h1>
+                    <p data-i18n="heroSubtitle" class="heroSubtitle">The AI co-pilot that elevates your employee experience from ordinary to extraordinary.</p>
+                    <p data-i18n="heroText" class="heroSubtitle">Join the revolution in HR technology. Experience the future, today.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#solutions" class="btn btn-outline" data-i18n="exploreSolutions">Explore Solutions</a>
+                        <a href="#demo" class="btn btn-primary" data-i18n="scheduleDemo">Schedule Demo</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 position-relative">
+                    <div class="hero-image-container">
+                        <img src="images/hero/robots.png" alt="AI-powered HR robots" class="hero-image">
+                        <div class="hero-caption">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-robot text-primary"></i>
+                                </div>
+                                <div>
+                                    <p class="mb-0" data-i18n="aiPowered"><strong>AI-Powered HR Co-Pilot</strong></p>
+                                    <p class="mb-0 small" data-i18n="aiPoweredText">Personalized, proactive, and intelligent HR support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The WeSoar Vision Section -->
+    <section class="vision-section py-5">
+        <div class="container text-center">
+            <h2 class="title_tertiary fw-bold" data-i18n="visionTitle">The WeSoar Vision</h2>
+            <p class="lead paragraph_text mb-5" data-i18n="visionText">Imagine a world where HR isn't a department, but an intelligent, always-on partner. Where every employee interaction is personalized, every decision data-driven, and every process streamlined. That's not a dream—it's WeSoar. We're not just automating HR; we're completely reinventing it. With cutting-edge generative AI, WeSoar's Co-Pilot delivers unparalleled efficiency, smarter decisions, and employee experiences that set new standards.</p>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="vision-card">
+                        <div class="vision-icon">
+                            <i class="bi bi-cpu"></i>
+                        </div>
+                        <h3 class="card_title" data-i18n="aiFirstPlatform">AI-First HR Platform</h3>
+                        <p data-i18n="aiFirstText">Our intelligent co-pilot adapts to your organization's unique culture and challenges, continuously learning and evolving to deliver personalized HR solutions.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="vision-card">
+                        <div class="vision-icon">
+                            <i class="bi bi-graph-up"></i>
+                        </div>
+                        <h3 class="card_title" data-i18n="dataDecisions">Data-Driven Decisions</h3>
+                        <p data-i18n="dataDecisionsText">Transform raw HR data into actionable insights, predicting trends and enabling strategic workforce planning that keeps you ahead of the curve.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="vision-card">
+                        <div class="vision-icon">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h3 class="card_title" data-i18n="employeeCentric">Employee-Centric Approach</h3>
+                        <p data-i18n="employeeCentricText">Create outstanding employee experiences with personalized interactions that boost engagement, satisfaction, and retention across your organization.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="vision-card">
+                        <div class="vision-icon">
+                            <i class="bi bi-lightning"></i>
+                        </div>
+                        <h3 class="card_title" data-i18n="operationalExcellence">Operational Excellence</h3>
+                        <p data-i18n="operationalExcellenceText">Streamline HR operations with intelligent automation that handles routine tasks, freeing your team to focus on strategic initiatives that drive growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact-section py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="title_secondary fw-bold" data-i18n="impactTitle">Impact. Quantified.</h2>
+            <p class="lead paragraph_text2 mb-5" data-i18n="impactSubtitle">Real results that transform how your organization operates.</p>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="impact-card">
+                        <div class="impact-icon">
+                            <i class="bi bi-clock-history"></i>
+                        </div>
+                        <h3 class="card_title" data-i18n="support247">24/7 Support</h3>
+                        <p data-i18n="support247Text">HR that never sleeps, so your team can thrive around the clock.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="impact-card">
+                        <div class="impact-icon">
+                            <i class="bi bi-cash-coin"></i>
+                        </div>
+                        <h3 class="card_title" data-i18n="roi">50-70%+ ROI</h3>
+                        <p data-i18n="roiText">Not a goal, but our proven track record.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="impact-card">
+                        <div class="impact-icon">
+                            <i class="bi bi-arrow-up-right-circle"></i>
+                        </div>
+                        <h3 class="card_title" data-i18n="scalability">Scalability</h3>
+                        <p data-i18n="scalabilityText">From garage startups to global giants—WeSoar scales with your ambition.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="impact-card">
+                        <div class="impact-icon">
+                            <i class="bi bi-person-check"></i>
+                        </div>
+                        <h3 class="card_title" data-i18n="personalization">Personalization</h3>
+                        <p data-i18n="personalizationText">AI that knows your people better than you do. Tailored experiences that drive engagement.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="impact-card">
+                        <div class="impact-icon">
+                            <i class="bi bi-eye"></i>
+                        </div>
+                        <h3 class="card_title" data-i18n="predictivePower">Predictive Power</h3>
+                        <p data-i18n="predictivePowerText">See the future of your workforce. Anticipate needs, solve problems before they arise.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="impact-card">
+                        <div class="impact-icon">
+                            <i class="bi bi-rocket-takeoff"></i>
+                        </div>
+                        <h3 class="card_title" data-i18n="fastImplementation">Fast Implementation</h3>
+                        <p data-i18n="fastImplementationText">Get up and running in days, not months. Our streamlined onboarding ensures your HR transformation starts fast.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="impact-card">
+                        <div class="impact-icon">
+                            <i class="bi bi-puzzle"></i>
+                        </div>
+                        <h3 class="card_title" data-i18n="integrations">Integrations</h3>
+                        <p data-i18n="integrationsText">Seamlessly connect with your existing HCM systems. WeSoar integrates effortlessly, enhancing your current setup.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="impact-card">
+                        <div class="impact-icon">
+                            <i class="bi bi-cloud"></i>
+                        </div>
+                        <h3 class="card_title" data-i18n="flexibleHosting">Flexible Hosting</h3>
+                        <p data-i18n="flexibleHostingText">Choose public cloud for agility, private cloud for security, or on-premises for full control.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a id="solutions"></a>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="solutions-reimagined py-5">
+        <div class="container">
+            <h2 class="title_tertiary fw-bold text-center" data-i18n="solutionsTitle">Solutions. Reimagined.</h2>
+            <p class="lead paragraph_text mb-5 text-center" data-i18n="solutionsSubtitle">Comprehensive AI-powered HR solutions designed for the modern workplace.</p>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="solution-card">
+                        <div class="solution-image-container">
+                            <img src="images/solutions/Talent Acquisition.jpg" alt="Talent Acquisition" class="solution-image">
+                            <h3 class="solution-title" data-i18n="talentAcquisition">Talent Acquisition</h3>
+                        </div>
+                        <div class="solution-content">
+                            <p data-i18n="talentAcquisitionText">Find your next game-changer with AI that delivers top talent, fast.</p>
+                            <ul class="solution-features">
+                                <li><i class="bi bi-check text-primary"></i> <span data-i18n="aiCandidateMatching">AI Candidate Matching</span></li>
+                                <li><i class="bi bi-check text-primary"></i> <span data-i18n="precisionJobAds">Precision Job Ads</span></li>
+                                <li><i class="bi bi-check text-primary"></i> <span data-i18n="virtualInterviewCoach">Virtual Interview Coach</span></li>
+                            </ul>
+                            <a href="./solutions.html#talentAcq" class="learn-more" data-i18n="learnMore">Learn more <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="solution-card">
+                        <div class="solution-image-container">
+                            <img src="images/solutions/Performance Enablement.jpg" alt="Performance Enablement" class="solution-image">
+                            <h3 class="solution-title" data-i18n="performanceEnablement">Performance Enablement</h3>
+                        </div>
+                        <div class="solution-content">
+                            <p data-i18n="performanceEnablementText">Empower teams with data-driven tools for peak performance.</p>
+                            <ul class="solution-features">
+                                <li><i class="bi bi-check text-primary"></i> <span data-i18n="goalSettingAutomation">Goal-Setting Automation</span></li>
+                                <li><i class="bi bi-check text-primary"></i> <span data-i18n="structuredCheckins">Structured Check-ins & Appraisals</span></li>
+                                <li><i class="bi bi-check text-primary"></i> <span data-i18n="performanceCoachAI">Performance Coach AI Agent</span></li>
+                            </ul>
+                            <a href="./solutions.html#performMGM" class="learn-more" data-i18n="learnMore">Learn more <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="solution-card">
+                        <div class="solution-image-container">
+                            <img src="images/solutions/Learning and Development.jpg" alt="Learning & Development" class="solution-image">
+                            <h3 class="solution-title" data-i18n="learningDevelopment">Learning & Development</h3>
+                        </div>
+                        <div class="solution-content">
+                            <p data-i18n="learningDevelopmentText">Deliver future-ready skills with personalized, AI-driven learning.</p>
+                            <ul class="solution-features">
+                                <li><i class="bi bi-check text-primary"></i> <span data-i18n="personalizedLearning">Hyper-Personalized Learning Paths</span></li>
+                                <li><i class="bi bi-check text-primary"></i> <span data-i18n="competencyDictionary">Competency Dictionary Creator</span></li>
+                                <li><i class="bi bi-check text-primary"></i> <span data-i18n="centralizedAcademy">Centralized Academy Platform</span></li>
+                            </ul>
+                            <a href="./solutions.html#learningDMT" class="learn-more" data-i18n="learnMore">Learn more <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="solution-card">
+                        <div class="solution-image-container">
+                            <img src="images/solutions/Talent Management.jpg" alt="Talent Management" class="solution-image">
+                            <h3 class="solution-title" data-i18n="talentManagement">Talent Management</h3>
+                        </div>
+                        <div class="solution-content">
+                            <p data-i18n="talentManagementText">Unlock workforce potential with AI-powered talent strategies.</p>
+                            <ul class="solution-features">
+                                <li><i class="bi bi-check text-primary"></i> <span data-i18n="talentManagementFeature1">Robust Skills Framework</span></li>
+                                <li><i class="bi bi-check text-primary"></i> <span data-i18n="talentManagementFeature2">Career Path Mapping</span></li>
+                                <li><i class="bi bi-check text-primary"></i> <span data-i18n="talentManagementFeature3">Predictive Succession Planning</span></li>
+                            </ul>
+                            <a href="./solutions.html#learningDMT" class="learn-more" data-i18n="learnMore">Learn more <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="solution-card">
+                        <div class="solution-image-container">
+                            <img src="images/solutions/Organization Design.jpg" alt="Organization Design" class="solution-image">
+                            <h3 class="solution-title" data-i18n="organizationDesign">Organization Design</h3>
+                        </div>
+                        <div class="solution-content">
+                            <p data-i18n="organizationDesignText">Build efficient, growth-driven structures with AI precision.</p>
+                            <ul class="solution-features">
+                                <li><i class="bi bi-check text-primary"></i> <span data-i18n="organizationDesignFerature1">Tailored Job Descriptions</span></li>
+                                <li><i class="bi bi-check text-primary"></i> <span data-i18n="organizationDesignFerature2">Automated Policy Management</span></li>
+                                <li><i class="bi bi-check text-primary"></i> <span data-i18n="organizationDesignFerature3">Compliance Automation></span></li>
+                            </ul>
+                            <a href="./solutions.html#orgdesign" class="learn-more" data-i18n="learnMore">Learn more <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="solution-card">
+                        <div class="solution-image-container">
+                            <img src="images/solutions/Employee Experience.jpg" alt="Employee Experience" class="solution-image">
+                            <h3 class="solution-title" data-i18n="exploreSolutions">Employee Experience</h3>
+                        </div>
+                        <div class="solution-content">
+                            <p data-i18n="employeeExperienceText">Enhance every employee moment with AI that sticks.</p>
+                            <ul class="solution-features">
+                                <li><i class="bi bi-check text-primary"></i> <span data-i18n="employeeExperienceFeature1">Continuous Listening (Pulse Surveys)</span></li>
+                                <li><i class="bi bi-check text-primary"></i> <span data-i18n="employeeExperienceFeature2">AI-Powered Smart Nudges</span></li>
+                                <li><i class="bi bi-check text-primary"></i> <span data-i18n="employeeExperienceFeature3">Ava - Your Virtual HRBP</span></li>
+                            </ul>
+                            <a href="./solutions.html#empEXP" class="learn-more" data-i18n="learnMore">Learn more <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="./solutions.html" class="btn btn-primary" data-i18n="exploreAllSolutions">Explore All Solutions <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Agents Section -->
+    <section class="ai-agents py-5 text-white">
+        <div class="container">
+            <div class="text-center mb-4 mid_section">
+                <span class="badge bg-light text-primary" data-i18n="revolutionaryAi">REVOLUTIONARY AI</span>
+                <h2 class="display-5 fw-bold" data-i18n="aiAgents">AI Agents: Your Proactive HR Co-Pilots</h2>
+                <p class="lead card-text mb-5" data-i18n="aiAgentsText">Embedded within each solution, WeSoar's AI Agents are intelligent co-pilots that learn, adapt, and guide—proactively supporting your people and automating complex tasks.</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card bg-transparent border-light h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="bi bi-bullseye fs-1"></i>
+                            </div>
+                            <h3 class="card-title text-center" data-i18n="goalSettingAgent">Goal Setting Agent</h3>
+                            <p class="card-text" data-i18n="goalSettingAgentText">Aligns goals with strategy, fast and flawlessly. Creates SMART objectives that connect individual performance to company success.</p>
+                            <div class="mt-3 text-center">
+                                <span class="d-block" data-i18n="goalSettingPercentage"><i class="bi bi-arrow-up-right"></i> 70% reduction in goal-setting time</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card bg-transparent border-light h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="bi bi-graph-up-arrow fs-1"></i>
+                            </div>
+                            <h3 class="card-title text-center" data-i18n="performanceCoachAgent">Performance Coach Agent</h3>
+                            <p class="card-text" data-i18n="performanceCoachAgentText">Continuous, personalized insights to improve feedback quality, close performance gaps and drive improvement.</p>
+                            <div class="mt-3 text-center">
+                                <span class="d-block" data-i18n="performanceCoachPercentage"><i class="bi bi-arrow-up-right"></i> 25% improvement in performance metrics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card bg-transparent border-light h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="bi bi-signpost-split fs-1"></i>
+                            </div>
+                            <h3 class="card-title text-center" data-i18n="careerCoachAgent">Career Coach Agent</h3>
+                            <p class="card-text" data-i18n="careerCoachAgentText">Personalized guidance on development and career moves, aligned with company vision and succession plans.</p>
+                            <div class="mt-3 text-center">
+                                <span class="d-block" data-i18n="careerCoachAgentPercentage"><i class="bi bi-arrow-up-right"></i> 28% increase in internal mobility</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card bg-transparent border-light h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="bi bi-person-workspace fs-1"></i>
+                            </div>
+                            <h3 class="card-title text-center" data-i18n="firstLineManager">First Line Manager Agent</h3>
+                            <p class="card-text" data-i18n="firstLineManagerText">Automates task allocation, delivers real-time feedback, and coaches employees to thrive while escalating complex cases to human managers.</p>
+                            <div class="mt-3 text-center">
+                                <span class="d-block" data-i18n="firstLineManagerPercentage"><i class="bi bi-arrow-up-right"></i> 40% more time for strategic work</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card bg-transparent border-light h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="bi bi-book fs-1"></i>
+                            </div>
+                            <h3 class="card-title text-center" data-i18n="KnowledgeBaseAdvisor">Knowledge-base Advisor Agent</h3>
+                            <p class="card-text" data-i18n="KnowledgeBaseAdvisorText">Instant answers to policy, compliance, and operational queries, available 24/7 across all time zones.</p>
+                            <div class="mt-3 text-center">
+                                <span class="d-block" data-i18n="KnowledgeBaseAdvisorPercentage"><i class="bi bi-arrow-up-right"></i> 90% faster policy information retrieval</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card bg-transparent border-light h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="bi bi-heart-pulse fs-1"></i>
+                            </div>
+                            <h3 class="card-title text-center" data-i18n="employeeEngagement">Employee Engagement Agent</h3>
+                            <p class="card-text" data-i18n="employeeEngagementText">Detects risks, delivers tailored interventions, and lifts retention through continuous listening and action.</p>
+                            <div class="mt-3 text-center">
+                                <span class="d-block" data-i18n="employeeEngagementPercentage"><i class="bi bi-arrow-up-right"></i> 30% boost in employee engagement</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <!-- <section class="trust-section py-5">
+        <div class="container">
+            <h2 class="title_tertiary fw-bold text-center" data-i18n="trustProven">Trust. Proven.</h2>
+            <p class="lead mb-5 paragraph_text  text-center" data-i18n="trustProvenText">Partnered with industry leaders who share our vision for innovation and excellence.</p>
+            
+            <div class="row align-items-center justify-content-center g-5">
+                <div class="col-4 col-md-2 text-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg" alt="SAP Logo" class="img-fluid" style="max-height: 50px;">
+                </div>
+                <div class="col-4 col-md-2 text-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo" class="img-fluid" style="max-height: 50px;">
+                </div>
+                <div class="col-4 col-md-2 text-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Infosys_logo.svg" alt="Infosys Logo" class="img-fluid" style="max-height: 50px;">
+                </div> 
+                <div class="col-4 col-md-2 text-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg" alt="Salesforce Logo" class="img-fluid" style="max-height: 50px;">
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Client Success Section -->
+    <section class="client-success py-5 ">
+        <div class="container">
+            <h2 class="title_tertiary fw-bold text-center" data-i18n="clientSuccess">Client Success</h2>
+            <p class="lead mb-5 paragraph_text3 text-center" data-i18n="clientSuccessText">Hear from organizations that have transformed their HR with WeSoar.</p>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm client-success-card">
+                        <div class="card-body">
+                            <div class="mb-4 text-center">
+                                <i class="bi bi-quote fs-1 text-primary"></i>
+                            </div>
+                            <p class="client_text fs-5 mb-4" data-i18n="clientReview1">"WeSoar didn't just improve our HR. They transformed our entire organization."</p>
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Alex Reynolds" class="rounded-circle" width="60">
+                                </div>
+                                <div class="ms-3 client_profile">
+                                    <h5 class="mb-0" data-i18n="clientName1">Alex Reynolds</h5>
+                                    <p class="mb-0" data-i18n="clientProfile1">VP Talent, Fortune 500 Tech Company</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm client-success-card">
+                        <div class="card-body">
+                            <div class="mb-4 text-center">
+                                <i class="bi bi-quote fs-1 text-primary"></i>
+                            </div>
+                            <p class="client_text fs-5 mb-4" data-i18n="clientReview1">"60% less time spent hiring. 30% boost in employee engagement. With WeSoar, results are real."</p>
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <img src="https://randomuser.me/api/portraits/women/41.jpg" alt="Jessica Thompson" class="rounded-circle" width="60">
+                                </div>
+                                <div class="ms-3 client_profile">
+                                    <h5 class="mb-0" data-i18n="clientName2">Jessica Thompson</h5>
+                                    <p class="mb-0" data-i18n="clientProfile2">CHRO, Leading Financial Firm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm client-success-card">
+                        <div class="card-body">
+                            <div class="mb-4 text-center">
+                                <i class="bi bi-quote fs-1 text-primary"></i>
+                            </div>
+                            <p class="client_text fs-5 mb-4" data-i18n="clientReview3">"WeSoar turned our HR challenges into opportunities. Their AI-driven insights have been a game-changer."</p>
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Maria Gonzalez" class="rounded-circle" width="60">
+                                </div>
+                                <div class="ms-3 client_profile">
+                                    <h5 class="mb-0" data-i18n="clientName3">Maria Gonzalez</h5>
+                                    <p class=" mb-0" data-i18n="clientProfile3">Head of People, International Retail Group</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Demo Section -->
+<!--    <section id="demo" class="py-5 bg-secondary">-->
+<!--        <div class="container">-->
+<!--            <div class="row justify-content-center text-center">-->
+<!--                <div class="col-lg-8">-->
+<!--                    <h2 class="title_secondary fw-bold" data-i18n="formTitle">Schedule Demo of the Future of HR</h2>-->
+<!--                    <p class="lead paragraph_text2 mb-5" data-i18n="formText">Don't just keep up—lead the way. Schedule a demo today and be among the first to experience how WeSoar can transform your HR tomorrow.</p>-->
+
+<!--                    <div id="hubspotFormContainer"></div>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+    <!-- Contact Us Section -->
+    <section class="py-5 contact-section">
+        <div class="container text-center">
+            <h2 class="title_secondary fw-bold" data-i18n="contactTitle">Contact Us</h2>
+            <p class="lead paragraph_text2 mb-5" data-i18n="contactText">Have questions or ready to start your HR transformation journey? Reach out to our team.</p>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="contact-card">
+                        <div class="mb-3">
+                            <i class="bi bi-envelope fs-1 text-primary"></i>
+                        </div>
+                        <h3 class="card_title" data-i18n="emailUs">Email Us</h3>
+                        <p class="card-t xt" data-i18n="emailText">Our team typically responds within 24 hours during business days.</p>
+                        <a href="mailto:contact@wesoar.ai" class="btn btn-primary mt-3" data-i18n="emailId">contact@wesoar.ai</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-card">
+                        <div class="mb-3">
+                            <i class="bi bi-telephone fs-1 text-primary"></i>
+                        </div>
+                        <h3 class="card_title" data-i18n="callUs">Call Us</h3>
+                        <p class="card-t ext" data-i18n="callTime">Available Monday to Friday, 9am - 6pm (UK Time).</p>
+                        <a href="tel:+44208882000" class="btn btn-primary mt-3" data-i18n="callNumber">+44 20 8882 000</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-card">
+                        <div class="mb-3">
+                            <i class="bi bi-geo-alt fs-1 text-primary"></i>
+                        </div>
+                        <h3 class="card_title" data-i18n="visiteUs">Visit Us</h3>
+                        <p class="card-te xt" data-i18n="visiteText">Headquarters: London, UK<br>Additional offices: UAE and India</p>
+                        <a href="#" id="openMap" class="btn btn-primary mt-3" data-i18n="visiteLocation">View Office Locations</a>
+                    </div>
+                </div>
+
+                 <div class="col-md-12">
+                    <div id="mapPanel">
+                        <div id="mapHeader">
+                            <a id="mapClose"><i class="bi bi-x-circle"></i></a>
+                        </div>
+                        <div id="map">
+                            <gmp-map center="33.03,47.50" zoom="3" map-id="DEMO_MAP_ID" style="height: 450px">
+                              <gmp-advanced-marker position="51.45809661688449, -0.9759092889351302" title="9 Greyfriars Road, Reading, RG1 1NU,United Kingdom"></gmp-advanced-marker>
+                              <gmp-advanced-marker position="25.06930191614964, 55.1417217552099" title="Jumeirah Lakes Towers, 14/02 One JLT, Dubai United Arab Emirates"></gmp-advanced-marker>
+                              <gmp-advanced-marker position="22.568919574321992, 88.35044698312545" title="20 British India Street, Kolkata, West Bengal 700069 India"></gmp-advanced-marker>
+                            </gmp-map>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row gy-4 mb-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="mb-4">
+                        <div class="text-xl fw-bold mb-3" data-i18n="wesoarTitle">WeSoar</div>
+                        <p class="mb-4" data-i18n="wesoarText">
+                            Revolutionizing HR with AI-powered solutions that elevate employee experiences and drive organizational success.
+                        </p>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="hover-white">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="#" class="hover-white">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="#" class="hover-white">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="hover-white">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="fs-5 fw-semibold mb-4" data-i18n="company">Company</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" data-i18n="aboutUs">About Us</a></li>
+                        <li class="mb-2"><a href="contact.html" data-i18n="contactUs">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="fs-5 fw-semibold mb-4" data-i18n="resources">Quik Links</h3>
+                    <ul class="list-unstyled">
+<!--                        <li class="mb-2"><a href="resources.html" data-i18n="blog">Blog</a></li>-->
+                        <li class="mb-2"><a href="solutions.html" data-i18n="solutions">Solutions</a></li>
+<!--                        <li class="mb-2"><a href="about.html" data-i18n="aboutUs">About Us</a></li>-->
+                        <li class="mb-2"><a href="resources.html" data-i18n="resources">Resources</a></li>
+<!--                        <li class="mb-2"><a href="contact.html" data-i18n="contactUs">Contact Us</a></li>-->
+                        <li class="mb-2"><a href="privacy-policy.html" data-i18n="privacyNotice">Privacy & Cookie Notice</a></li>
+                        <li class="mb-2"><a href="website-terms.html" data-i18n="websiteTerms">Website Terms and Conditions</a></li>
+                        <li class="mb-2"><a href="subscription-terms.html" data-i18n="subscriptionTermsTitle">Subscription Terms and Conditions</a></li>
+                        <li class="mb-2"><a href="form.html" data-i18n="vulnerabilityReporting">Vulnerability Reporting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="fs-5 fw-semibold mb-4" data-i18n="downloadNow">Download Now</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <a href="https://play.google.com/store/apps/details?id=com.app.wesoar" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center">
+                                <i class="bi bi-google-play me-2 fs-4"></i>
+                                <span data-i18n="googlePlay">Google Play</span>
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="https://apps.apple.com/us/app/id1522828281" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center">
+                                <i class="bi bi-apple me-2 fs-4"></i>
+                                <span data-i18n="appStore">App Store</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                    <div class="mb-3 mb-md-0">
+                        <p class="small mb-0" data-i18n="copyright">
+                            © 2025 WeSoar. All rights reserved.
+                            <a href="admin/login.html" class="opacity-50 ms-1" style="font-size: 0.7rem;" aria-label="Admin login">•</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const openBtn = document.getElementById('openMap');
+    const mapPanel = document.getElementById('mapPanel');
+    const closeBtn = document.getElementById('mapClose');
+
+    openBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      mapPanel.style.display = 'block';
+      // scroll into view if you like:
+      mapPanel.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    closeBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      mapPanel.style.display = 'none';
+      // optionally scroll back up
+      openBtn.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
+
+
+     <script>
+        // Ensure the script is fully loaded before initializing the form
+        window.onload = function() {
+            if (typeof hbspt !== 'undefined') {
+                hbspt.forms.create({
+                    portalId: "8090367", // Your HubSpot portal ID
+                    formId: "134b06cb-6685-48d9-8bbf-3e3d72abdc26", // Your HubSpot form ID
+                    region: "na1", // Region (for North America)
+                    target: '#hubspotFormContainer' // This ensures the form is inserted in the div with the ID hubspotFormContainer
+                });
+            } else {
+                console.error("HubSpot forms script not loaded properly.");
+            }
+        };
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoGiKlpYlUG45L9zUF4yzBpHBXQYOoLak&libraries=maps,marker" defer></script>
+
+
+</body>
+</html>

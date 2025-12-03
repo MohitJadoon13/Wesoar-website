@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - WeSoar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/embed/v2.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                 <!-- Light (colored) logo -->
+                <img src="./images/wesoar_logo.svg" alt="WeSoar Logo"  class="logo logo--light"/>
+                <!-- Dark (white) logo -->
+                <img src="./images/wesoar_logo_white.svg" alt="WeSoar Logo (White)" class="logo logo--dark"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger_iconbox">
+                    <svg class="hamburger_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                        <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M1 7h28" />
+                        <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M1 15h28" />
+                        <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M1 23h28" />
+                    </svg>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="solutions.html" data-i18n="solutions">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" data-i18n="aboutUs">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html" data-i18n="resources">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" data-i18n="contact">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDisplay" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-globe"></i> EN
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDisplay">
+                            <li><a class="dropdown-item language-item" href="#" data-lang="en">English</a></li>
+                            <li><a class="dropdown-item language-item" href="#" data-lang="ar">العربية</a></li>
+                            <li><a class="dropdown-item language-item" href="#" data-lang="es">Español</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link theme-toggle" href="#"><i class="bi bi-moon"></i></a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary" href="#demo" data-i18n="scheduleDemo">Schedule Demo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-5 bg-light head_section">
+        <div class="container">
+            <h1 class="title_primary fw-bold text-center mb-4" data-i18n="aboutUsTitle">About Us</h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="paragraph_text2 text-center mb-4" data-i18n="aboutUsQuote">"We started WeSoar with a simple belief: that AI could make HR not just better, but extraordinary."</p>
+                    <p class="paragraph_text2 text-center mb-5" data-i18n="aboutUsText">At WeSoar, we're revolutionizing HR. Founded by HR and technology pioneers, we're driven by a bold vision: to transform Human Resources into a strategic powerhouse fueled by AI. With headquarters in London and vibrant offices in the UAE and India, we empower organizations across the US, UK, UAE, and Saudi Arabia to work smarter and soar higher.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="our_mission py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <h2 class="title_tertiary fw-bold mb-4" data-i18n="ourMission">Our Mission</h2>
+                    <p class="paragraph_text mb-0" data-i18n="missionText">To empower a billion lives to work smarter, soar higher, and lead fulfilling lives by enabling enterprises with intelligent HR decisioning and automation.</p>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="title_tertiary fw-bold mb-4" data-i18n="ourVision">Our Vision</h2>
+                    <p class="paragraph_text mb-0" data-i18n="visionPageText">To lead the world as the premier provider of AI-powered HR Agents, revolutionizing talent management, engagement, and workforce planning with automation, predictive intelligence, and human-centric AI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="title_secondary fw-bold mb-4" data-i18n="coreValues">Our Core Values</h2>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="me-3 text-primary">
+                            <i class="bi bi-lightbulb fs-3"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-primary1 fw-bold mb-1" data-i18n="aiFirstThinking">AI-First Thinking</h3>
+                            <p class="mb-0" data-i18n="aiFirstThinkingText">HR should be brilliant, not just automated.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="me-3 text-primary">
+                            <i class="bi bi-building fs-3"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-primary1 fw-bold mb-1" data-i18n="enterpriseReadyAI">Enterprise-Ready AI</h3>
+                            <p class="mb-0" data-i18n="enterpriseReadyAIText">Secure, compliant, and tailored to your needs.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="me-3 text-primary">
+                            <i class="bi bi-graph-up fs-3"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-primary1 fw-bold mb-1" data-i18n="scientificFoundation">Scientific Foundation</h3>
+                            <p class="mb-0" data-i18n="scientificFoundationText">Rooted in Behavioral Economics, Psychology, and Neuroscience.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="me-3 text-primary">
+                            <i class="bi bi-lightning fs-3"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-primary1 fw-bold mb-1" data-i18n="fastValues">FAST (Fun, Audacity, Simplicity, Teamwork)</h3>
+                            <p class="mb-0" data-i18n="fastValuesText">A culture that's people-first and fearless.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center">
+                        <div class="me-3 text-primary">
+                            <i class="bi bi-people fs-3"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-primary1 fw-bold mb-1" data-i18n="winningTogether">Winning Together</h3>
+                            <p class="mb-0" data-i18n="winningTogetherText">Partnering with clients and ecosystems for limitless success.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team Section -->
+    <section class="leadership_section py-5">
+        <div class="container">
+            <h2 class="title_tertiary fw-bold mb-3 text-center" data-i18n="leadershipTeam">Leadership Team</h2>
+            <p class="paragraph_text text-center mb-5" data-i18n="leadershipSubtitle">Meet the pioneers driving our mission forward</p>
+            
+            <div class="row g-4">
+                <!-- Nisheeth Pathak -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 team-card">
+                        <div class="card-img-top team-img-container">
+                            <img src="images/about/grayscale/nisheeth-pathak.jpg" alt="Nisheeth Pathak" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card_title h4 mb-1" data-i18n="nisheethPathakName">Nisheeth Pathak</h3>
+                            <p class="profile_title" data-i18n="nisheethPathakTitle">Founder & CEO</p>
+                            <p class="paragraph_text2" data-i18n="nisheethPathakDesc">20+ years in global HR, certified by the European Federation of Psychologists' Associations.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Shadi Khanbani -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 team-card">
+                        <div class="card-img-top team-img-container">
+                            <img src="images/about/grayscale/shadi-khanbani.jpg" alt="Shadi Khanbani" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card_title h4 mb-1" data-i18n="shadiName">Shadi Khanbani</h3>
+                            <p class="profile_title" data-i18n="shadiTitle">Co-founder & Chief Customer Success Officer</p>
+                            <p class="paragraph_text2 " data-i18n="shadiDesc">15+ years transforming employee lifecycles.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Prakash Khandelwal -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 team-card">
+                        <div class="card-img-top team-img-container">
+                            <img src="images/about/grayscale/prakash-khandelwal.jpg" alt="Prakash Khandelwal" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card_title h4 mb-1" data-i18n="prakashName">Prakash Khandelwal</h3>
+                            <p class="profile_title" data-i18n="prakashTitle">Chief Technology Officer</p>
+                            <p class="paragraph_text2 " data-i18n="prakashDesc">23+ years building scalable tech solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    <!-- Advisory Board Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="title_secondary fw-bold mb-2 text-center" data-i18n="advisoryBoard">Advisory Board</h2>
+            <p class="paragraph_text2  text-center mb-5" data-i18n="advisoryBoardSubtitle">World-class minds from SAP, Aon, IE Business School, and the Public Investment Fund</p>
+            
+            <div class="row g-4">
+                <!-- Dr. Bernd van Linder -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 team-card">
+                        <div class="card-img-top team-img-container">
+                            <img src="images/about/grayscale/bernd-van-linder.jpg" alt="Dr. Bernd van Linder" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card_title h4 mb-1" data-i18n="berndName">Dr. Bernd van Linder</h3>
+                            <p class="profile_title" data-i18n="berndTitle">Chief Executive Officer</p>
+                            <p class="paragraph_text2 " data-i18n="berndDesc">Commercial Bank of Dubai</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- David Suarez -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 team-card">
+                        <div class="card-img-top team-img-container">
+                            <img src="images/about/grayscale/david-suarez.jpg" alt="David Suarez" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card_title h4 mb-1" data-i18n="davidName">David Suarez</h3>
+                            <p class="profile_title" data-i18n="davidTitle">Vice Dean</p>
+                            <p class="paragraph_text2 " data-i18n="davidDesc">IE Business School</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ray Everett -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 team-card">
+                        <div class="card-img-top team-img-container">
+                            <img src="images/about/grayscale/ray-everett.jpg" alt="Ray Everett" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card_title h4 mb-1" data-i18n="rayName">Ray Everett</h3>
+                            <p class="profile_title" data-i18n="rayTitle">Global Head of Products</p>
+                            <p class="paragraph_text2 " data-i18n="rayDesc">McLagan, Aon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4 mt-2">
+                <!-- Roberto Croci -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 team-card">
+                        <div class="card-img-top team-img-container">
+                            <img src="images/about/grayscale/roberto-croci.jpg" alt="Roberto Croci" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card_title h4 mb-1" data-i18n="robertoName">Roberto Croci</h3>
+                            <p class="profile_title" data-i18n="robertoTitle">Dir, Value Creation & Transformation</p>
+                            <p class="paragraph_text2 " data-i18n="robertoDesc">Public Investment Fund</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Anil Bhaskaran -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 team-card">
+                        <div class="card-img-top team-img-container">
+                            <img src="images/about/grayscale/anil-bhaskaran.jpg" alt="Anil Bhaskaran" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card_title h4 mb-1" data-i18n="anilName">Anil Bhaskaran</h3>
+                            <p class="profile_title" data-i18n="anilTitle">Vice President - Solution Advisory & CoE</p>
+                            <p class="paragraph_text2 " data-i18n="anilDesc">Business Technology Platform, Asia Pacific & Japan at SAP</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Frederick Carstens -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 team-card">
+                        <div class="card-img-top team-img-container">
+                            <img src="images/about/grayscale/frederick-carstens.jpg" alt="Frederick Carstens" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card_title h4 mb-1" data-i18n="frederickName">Frederick Carstens</h3>
+                            <p class="profile_title" data-i18n="frederickTitle">Ex-CHRO</p>
+                            <p class="paragraph_text2 " data-i18n="frederickDesc">ADIB, Kuwait Finance House</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4 mt-2">
+                <!-- Debabrat Mishra -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 team-card">
+                        <div class="card-img-top team-img-container">
+                            <img src="images/about/grayscale/debabrat-mishra.jpg" alt="Debabrat Mishra" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card_title h4 mb-1" data-i18n="debabratName">Debabrat Mishra</h3>
+                            <p class="profile_title" data-i18n="debabratTitle">Partner, True Search</p>
+                            <p class="paragraph_text2 " data-i18n="debabratDesc">Ex-Partner Deloitte, Ex-Aon</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ali Fenwick -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 team-card">
+                        <div class="card-img-top team-img-container">
+                            <img src="images/about/grayscale/ali-fenwick.jpg" alt="Ali Fenwick, Ph.D." class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card_title h4 mb-1" data-i18n="aliName">Ali Fenwick, Ph.D.</h3>
+                            <p class="profile_title" data-i18n="aliTitle">Prof., Org Behaviour & Innovation</p>
+                            <p class="paragraph_text2 " data-i18n="aliDesc">Hult Business School</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Boon Chong Na -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 team-card">
+                        <div class="card-img-top team-img-container">
+                            <img src="images/about/grayscale/boon-chong-na.jpg" alt="Boon Chong Na" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card_title h4 mb-1" data-i18n="boonName">Boon Chong Na</h3>
+                            <p class="profile_title" data-i18n="boonTitle">Retired Partner</p>
+                            <p class="paragraph_text2 " data-i18n="boonDesc">Aon Human Capital Solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Sets Us Apart Section -->
+    <section class="what_section py-5">
+        <div class="container">
+            <h2 class="title_tertiary fw-bold mb-5 text-center" data-i18n="whatSet">What Sets Us Apart</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="what-sets-us-apart-card text-center">
+                        <div class="mb-4">
+                            <i class="bi bi-laptop text-primary fs-1"></i>
+                        </div>
+                        <h3 class="card_title mb-3" data-i18n="whatTitle1">Comprehensive AI Platform</h3>
+                        <p data-i18n="whatDesc1">A unified super-app integrating talent acquisition, learning, performance, and engagement—customized to your culture, not a one-size-fits-all fix.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="what-sets-us-apart-card text-center">
+                        <div class="mb-4">
+                            <i class="bi bi-globe text-primary fs-1"></i>
+                        </div>
+                        <h3 class="card_title mb-3" data-i18n="whatTitle2">Local Commitment, Global Reach</h3>
+                        <p data-i18n="whatDesc2">Deeply rooted in dynamic markets like the UK, US and Middle East, we offer flexible deployment to meet global standards and data-sensitive requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="what-sets-us-apart-card text-center">
+                        <div class="mb-4">
+                            <i class="bi bi-lightning text-primary fs-1"></i>
+                        </div>
+                        <h3 class="card_title mb-3" data-i18n="whatTitle3">Fast Implementation</h3>
+                        <p data-i18n="whatDesc3">From setup to impact in days to weeks, not months – because transformation can't wait.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interested in Learning More Section -->
+    <section class="interested_section py-5">
+        <div class="container text-center">
+            <h2 class="title_secondary fw-bold mb-2" data-i18n="interestedLearning">Interested in learning more?</h2>
+            <p class="mb-4" data-i18n="interestedText">Schedule a demo to get an in-depth look at how our solutions can help your organization.</p>
+            <a href="#demo" class="btn btn-primary" data-i18n="scheduleDemo">Schedule Demo</a>
+        </div>
+    </section>
+
+  <!-- Schedule Demo Section -->
+    <!-- <section id="demo" class="py-5 bg-secondary">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h2 class="title_secondary fw-bold" data-i18n="formTitle">Schedule Demo of the Future of HR</h2>
+                    <p class="lead paragraph_text2 mb-5" data-i18n="formText">Don't just keep up—lead the way. Schedule a demo today and be among the first to experience how WeSoar can transform your HR tomorrow.</p>
+                    
+                    <div id="hubspotFormContainer"></div>
+
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row gy-4 mb-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="mb-4">
+                        <div class="text-xl fw-bold mb-3" data-i18n="wesoarTitle">WeSoar</div>
+                        <p class="mb-4" data-i18n="wesoarText">
+                            Revolutionizing HR with AI-powered solutions that elevate employee experiences and drive organizational success.
+                        </p>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="hover-white">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="#" class="hover-white">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="#" class="hover-white">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="hover-white">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="fs-5 fw-semibold mb-4" data-i18n="company">Company</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" data-i18n="aboutUs">About Us</a></li>
+                        <li class="mb-2"><a href="contact.html" data-i18n="contactUs">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="fs-5 fw-semibold mb-4" data-i18n="resources">Quik Links</h3>
+                    <ul class="list-unstyled">
+<!--                        <li class="mb-2"><a href="resources.html" data-i18n="blog">Blog</a></li>-->
+                        <li class="mb-2"><a href="solutions.html" data-i18n="solutions">Solutions</a></li>
+<!--                        <li class="mb-2"><a href="about.html" data-i18n="aboutUs">About Us</a></li>-->
+                        <li class="mb-2"><a href="resources.html" data-i18n="resources">Resources</a></li>
+<!--                        <li class="mb-2"><a href="contact.html" data-i18n="contactUs">Contact Us</a></li>-->
+                        <li class="mb-2"><a href="privacy-policy.html" data-i18n="privacyNotice">Privacy & Cookie Notice</a></li>
+                        <li class="mb-2"><a href="website-terms.html" data-i18n="websiteTerms">Website Terms and Conditions</a></li>
+                        <li class="mb-2"><a href="subscription-terms.html" data-i18n="subscriptionTermsTitle">Subscription Terms and Conditions</a></li>
+                        <li class="mb-2"><a href="form.html" data-i18n="vulnerabilityReporting">Vulnerability Reporting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="fs-5 fw-semibold mb-4" data-i18n="downloadNow">Download Now</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <a href="https://play.google.com/store/apps/details?id=com.app.wesoar" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center">
+                                <i class="bi bi-google-play me-2 fs-4"></i>
+                                <span data-i18n="googlePlay">Google Play</span>
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="https://apps.apple.com/us/app/id1522828281" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center">
+                                <i class="bi bi-apple me-2 fs-4"></i>
+                                <span data-i18n="appStore">App Store</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                    <div class="mb-3 mb-md-0">
+                        <p class="small mb-0" data-i18n="copyright">
+                            © 2025 WeSoar. All rights reserved.
+                            <a href="admin/login.html" class="opacity-50 ms-1" style="font-size: 0.7rem;" aria-label="Admin login">•</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Ensure the script is fully loaded before initializing the form
+        window.onload = function() {
+            if (typeof hbspt !== 'undefined') {
+                hbspt.forms.create({
+                    portalId: "8090367", // Your HubSpot portal ID
+                    formId: "134b06cb-6685-48d9-8bbf-3e3d72abdc26", // Your HubSpot form ID
+                    region: "na1", // Region (for North America)
+                    target: '#hubspotFormContainer' // This ensures the form is inserted in the div with the ID hubspotFormContainer
+                });
+            } else {
+                console.error("HubSpot forms script not loaded properly.");
+            }
+        };
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
